@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.397906">
+    <testcase classname="Manage todo list as a todoMVC user" name="Add and remove items from todo list" time="28.397906">
+        <system-out><![CDATA[Given I am on todoMVC landing page..........................................passed
+When I add following items in todo list:....................................passed
+Then I expect "3" items added in the todo list..............................passed
+When I remove following items from todo list................................passed
+Then I expect "1" items added in the todo list..............................passed
+]]></system-out>
+    </testcase>
+</testsuite>

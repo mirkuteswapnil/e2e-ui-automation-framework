@@ -1,0 +1,160 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4852705917,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on todoMVC landing page",
+            "match": {
+              "location": "TodoSteps.redirect_ToLandingPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21998745208,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AbstractBase.Setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Add and remove items from todo list",
+        "description": "",
+        "id": "manage-todo-list-as-a-todomvc-user;add-and-remove-items-from-todo-list",
+        "after": [
+          {
+            "result": {
+              "duration": 76557625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AbstractBase.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 770886250,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I add following items in todo list:",
+            "match": {
+              "location": "TodoSteps.addItems_ToList(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Lunch"
+                ]
+              },
+              {
+                "cells": [
+                  "Grocery"
+                ]
+              },
+              {
+                "cells": [
+                  "Laundry"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32095792,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I expect \"3\" items added in the todo list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 9
+                }
+              ],
+              "location": "TodoSteps.verify_ItemsInList(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 649263708,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I remove following items from todo list",
+            "match": {
+              "location": "TodoSteps.removeItems_FromList(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Laundry"
+                ]
+              },
+              {
+                "cells": [
+                  "Lunch"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15026916,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I expect \"1\" items added in the todo list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 9
+                }
+              ],
+              "location": "TodoSteps.verify_ItemsInList(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P1"
+          }
+        ]
+      }
+    ],
+    "name": "Manage todo list as a todoMVC user",
+    "description": "",
+    "id": "manage-todo-list-as-a-todomvc-user",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/todos.feature",
+    "tags": []
+  }
+]
